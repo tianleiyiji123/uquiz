@@ -1,0 +1,327 @@
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+input,
+option,
+dl,
+dd,
+dt,
+i,
+em,
+b,button
+,textarea{
+  font-style: normal;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: .6rem;
+  background: none;
+  font-weight: normal;
+  outline: none;
+  /*/!*css3动画加速*!/*/
+  -webkit-oveflow-scrolling: touch;
+  -moz-oveflow-scrolling: touch;
+  -ms-oveflow-scrolling: touch;
+  -o-oveflow-scrolling: touch;
+  oveflow-scrolling: touch;
+  font-family: "Microsoft YaHei";
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: #efeff4;
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+/*清除浮动*/
+.clear-float:after {
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.clear:before,.clear:after{
+  content: "";
+  display: table;
+}
+.clear:after{
+  clear: both;
+}
+.clear{
+  *zoom:1;
+}
+
+
+::-webkit-input-placeholder {
+  font-size: 1em;
+  color: #a9a9a9;
+  padding-top: 0.1em;
+}
+
+.f {
+  width: 100%;
+}
+.w100{
+  width: 100%;
+}
+.mg {
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.block {
+  display: block;
+}
+.inline{
+  display: inline !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+/*颜色块*/
+.black {
+  color: #000000;
+}
+.yellow{
+  color: #ff9600;
+}
+.red{
+  color: #f23030;
+}
+.grey{
+  color: #999999;
+}
+.blue{
+  color: #3362af;
+}
+.white{
+  color: #ffffff;
+}
+.grey-6{
+  color: #666666;
+}
+.bgf{
+  background-color: #ffffff;
+}
+.bgf5{
+  background-color: #f5f5f5;
+}
+.hidden {
+  overflow: hidden;
+}
+/*字体设置*/
+.font14{
+  font-size: 14px !important;
+  font-family: "microsoft yahei";
+}
+.font12{
+  font-size: 12px;
+  font-family: "microsoft yahei";
+}
+.bold{
+  font-weight: bold;
+}
+.btn{
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+/*特殊样式*/
+.ina{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.va{
+  vertical-align: middle;
+}
+.tac{
+  text-align: center;
+}
+.tal{
+  text-align: left;
+}
+.tar{
+  text-align: right;
+}
+
+
+
+@Cblue: #3985ff;
+@Cred: #f23030;
+@Cgrey: #efeff4;
+@Cline: #d4d4d4;
+@Cword: #999999;
+@666: #666666;
+@333: #333333;
+.width(@width) {
+  width: @width/40;
+}
+
+.height(@height) {
+  height: @height/40;
+}
+
+.margin(@top,@right,@bottom,@left) {
+  margin: @top/40 @right/40 @bottom/40 @left/40;
+}
+
+.marginAuto(@top,@bottom) {
+  margin: @top/40 auto @bottom/40;
+}
+
+.marginTop(@top) {
+  margin-top: @top/40;
+}
+
+.marginLeft(@left) {
+  margin-left: @left/40;
+}
+
+.marginRight(@right) {
+  margin-right: @right/40;
+}
+
+.marginBottom(@bottom) {
+  margin-bottom: @bottom/40;
+}
+
+.paddingTop(@top) {
+  padding-top: @top/40;
+}
+
+.paddingLeft(@left) {
+  padding-left: @left/40;
+}
+
+.paddingRight(@right) {
+  padding-right: @right/40;
+}
+
+.paddingBottom(@bottom) {
+  padding-bottom: @bottom/40;
+}
+
+.padding(@top,@right,@bottom,@left) {
+  padding: @top/40 @right/40 @bottom/40 @left/40;
+}
+
+.border(@length,@solid,@color) {
+  border: @length/40 @solid @color;
+}
+
+.borderTop(@length,@solid,@color) {
+  border-top: @length/40 @solid @color;
+}
+
+.borderRight(@length,@solid,@color) {
+  border-right: @length/40 @solid @color;
+}
+
+.borderBottom(@length,@solid,@color) {
+  border-bottom: @length/40 @solid @color;
+}
+
+.borderLeft(@length,@solid,@color) {
+  border-left: @length/40 @solid @color;
+}
+
+.fontSize(@fontsize) {
+  font-size: @fontsize/40;
+}
+
+.lineHeight(@lineheight) {
+  line-height: @lineheight/40;
+}
+
+.backSize(@width,@height) {
+  background-size: @width/40 @height/40;
+}
+
+.backPosition(@left,@top) {
+  background-position: @left/40 @top/40;
+}
+
+.backPositionLeft(@left,@top) {
+  background-position: @left @top/40;
+}
+
+.borderRadius(@rate) {
+  -webkit-border-radius: @rate/40;
+  -moz-border-radius: @rate/40;
+  -ms-border-radius: @rate/40;
+  -o-border-radius: @rate/40;
+  border-radius: @rate/40s;
+}
+
+.borderCircle() {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.top(@top) {
+  top: @top/40;
+}
+
+.left(@left) {
+  left: @left/40;
+}
+
+.right(@right) {
+  right: @right/40;
+}
+
+.bottom(@bottom) {
+  bottom: @bottom/40;
+}
+
+.textIndent(@textIndent) {
+  text-indent: @textIndent/40;
+}
+
+.h10 {
+  .height(10rem);
+  background-color: #efeff4;
+}
+
+.h20 {
+  .height(20rem);
+  background-color: #efeff4;
+}
+
+.h90 {
+  .height(90rem);
+}
+
+.h100 {
+  .height(100rem);
+}
